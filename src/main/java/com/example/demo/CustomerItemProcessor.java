@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import org.springframework.batch.item.ItemProcessor;
+import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -12,7 +13,7 @@ public class CustomerItemProcessor implements ItemProcessor<Customer, Customer> 
     private static final Logger LOG = LoggerFactory.getLogger(CustomerItemProcessor.class);
 
     @Override
-    public Customer process(final Customer customer) throws Exception {
+    public Customer process(@NonNull final Customer customer) throws Exception {
 
         LOG.info("Customer received:" + customer.getFirstName() + " " + customer.getLastName());
 
