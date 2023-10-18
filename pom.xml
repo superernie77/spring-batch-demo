@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.jot.springbatch5</groupId>
-	<artifactId>spring-batch-5-native-images</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-batch-5-native-images</name>
-	<description>Demo project for Spring Boot</description>
+	<artifactId>spring-batch-demo-app</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>spring-batch-demo-app</name>
+	<description>Demo project for a Spring Batch application with Spring Boot 2.7.15</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

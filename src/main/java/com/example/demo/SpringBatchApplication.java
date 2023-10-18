@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @EnableBatchProcessing
-public class SpringBatch5NativeImagesApplication {
+public class SpringBatchApplication {
 
 	public static void main(String[] args) throws Exception {
-		SpringApplication.run(SpringBatch5NativeImagesApplication.class, args);
+		SpringApplication.run(SpringBatchApplication.class, args);
 	  }
 
 }
