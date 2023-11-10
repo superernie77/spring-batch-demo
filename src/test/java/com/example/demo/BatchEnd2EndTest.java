@@ -30,16 +30,16 @@ public class BatchEnd2EndTest {
     public void testJob(@Autowired Job job) throws Exception {
         this.jobLauncherTestUtils.setJob(job);
 
-        // create Jobparameters fot the JobExecution
+        // You can create Jobparameters for the JobExecution
         JobParameters params = new JobParametersBuilder().addString("param1", "value1").toJobParameters();
         
-        // launches the job with the input file in /src/test/resources/data.csv
+        // launches the job with the input file /src/test/resources/data.csv
         JobExecution jobExecution = jobLauncherTestUtils.launchJob(params);
 
-
+        // How to check for the Job Status
         Assertions.assertEquals("COMPLETED", jobExecution.getExitStatus().getExitCode());
 
-        // job should have inserted 4 customer
+        // Job should have inserted 4 Customers
         Assertions.assertEquals(customerRepository.findAll().size(), 4);
     }
 
